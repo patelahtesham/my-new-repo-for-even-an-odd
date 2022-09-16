@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="userNum" type="text" placeholder="enter num" >
+    <button onclick="evenodd()" type="submit">click here</button> 
+    <P> 0 = even</P>
+    <P>1 = Odd</P>
+    <p id="answer"></p>
+
+    <script>
+        const evenodd = () => {
+            let isEven = document.querySelector("#userNum").value
+            let ans = isEven % 2
+            let result = document.querySelector("#answer").innerHTML = ans 
+        }
+    
+           
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
